@@ -23,6 +23,14 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': 'off',
-    'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }]
+    'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
+    'space-in-brackets': ['error', 'always', {
+      'singleValue': false,
+      'objectsInArrays': false,
+      'arraysInArrays': false,
+      'arraysInObjects': false,
+      'objectsInObjects': false,
+      'propertyName': false
+    }]
   },
 };
